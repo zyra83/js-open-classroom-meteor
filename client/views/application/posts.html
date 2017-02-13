@@ -1,12 +1,6 @@
 <template name='posts'>
     <h1>Liste des posts</h1>
     {{#each posts}}
-        <div class='post'>
-            {{#if hide}}
-                Ce post est caché
-            {{else}}
-                {{title}}
-            {{/if}}
-        </div>
+        {{> post}}
     {{/each}}
 </template>
